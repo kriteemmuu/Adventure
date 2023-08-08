@@ -1,0 +1,186 @@
+/* setting up the variables */
+:root {
+    --primary: #f8ce13;
+    --secondary: #424242;
+    --white: #ffffff;
+    --bg: #f7f7f7;
+    --text: #333;
+    --shadow: #0000001a;
+  }
+  
+  /* global settings */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    font-family: "Nunito", sans-serif;
+  }
+/* contact us */
+.image{
+    width: 100%;
+    height: auto;
+}
+iframe{
+  position: relative;
+  margin-top: -20px;
+    width: 400px;
+    height: 500px;
+
+}
+
+.form {
+    width: 60%;
+    height: 40%;
+    margin-left: 250px;
+    margin-top: 50px;
+    position: relative;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  form {
+    height: 100%;
+    padding: 2.3rem 2.2rem;
+    z-index: 10;
+    overflow: hidden;
+    position: relative;
+  }
+  .contact-info {
+    padding: 2.3rem 2.2rem;
+    position: relative;
+  }
+  .information {
+    display: flex;
+    margin-top: 10px;
+    color: var(--secondary);
+    align-items: center;
+    font-size: 25px;
+  }
+  
+  .information i {
+    width: 28px;
+    margin-right: 0.7rem;
+  }
+  .information p {
+    text-transform: none;
+  }
+  /* last circle of find us here part */
+  .contact-form {
+    background-color: var(--text);
+    position: relative;
+    
+  }
+
+  
+  .contact-form h3{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 35px;
+    color: antiquewhite;
+  /* border: 2px solid red; */
+    
+  }
+    /* square in between find us and write to us */
+  .contact-form:before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-color: var(--text);
+    transform: rotate(45deg);
+    top: 50px;
+    left: -13px;
+  }
+  
+  .input-container {
+      margin: 1.5rem 0;
+    }
+ form .all{
+  /* border: 2px solid red; */
+  margin-top: 10px;
+ }
+    .input {
+    height: 7vh;
+    width: 300px;
+    margin-left: 90px;
+    align-items: center;
+    outline: none;
+    border: 2px solid #fafafa;
+    background: none;
+    padding: 0.6rem 1.2rem;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+  }
+  /* send button */
+  .send {
+    padding: 0.6rem 1.3rem;
+    background-color: var(--primary);
+    border: 2px solid var(--white);
+    font-size: 1.95rem;
+    color: var(--text);
+    line-height: 1;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 100px;
+    margin-left: 50px;
+    
+  }
+  
+  .send:hover {
+    background-color: transparent;
+    color: var(--white);
+  }
+  /* contact us completed */
+
+  .form-group {
+    width: 80%;
+    /* margin-bottom: 20px; */
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    font-size: 18px;
+    margin-bottom: 10px;
+  
+    color: antiquewhite;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="date"],
+  .form-group input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-group button[type="submit"] {
+    width: 110px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 35%;
+  }
+  

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" th:href="@{~/css/bill.css}" />
+    <link rel="shortcut icon" type="x-icon" th:href="@{~/img/logo.png}">
+    <title>Customer Invoice:Adventure</title>
+  </head>
+  <body>
+    <div class="my-5 page" size="A4">
+      <div class="p-5">
+        <section class="top-content bb d-flex justify-content-between">
+          <div class="logo">
+           <img th:src="@{~/img/logo.png}" alt="not" class="img-fluid" />
+            <p> Visit again!!! </p>
+          </div>
+          <div class="top-left">
+            <div class="position-relative">
+              <p>Name: <span></span></p>
+              <p>Invoice Date: <span id="date"></span></p>
+            </div>
+          </div>
+        </section>
+        <section class="store-user mt-5">
+          <div class="col-12">
+            <div class="row bb pb-3">
+              
+              <div class="col-4">
+                <p>Departure:</p>
+                <h2></h2>
+              </div>
+              <div class="col-4">
+                <p>Arrival:</p>
+                <h2></h2>
+              </div>
+              <div class="col-4">
+                <p>Contact:</p>
+                <h2 ></h2>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="balance-info">
+          <div class="row">
+            <div class="col-8">
+              <p class="m-0 font-weight-bold">Note:</p>
+              <p>
+               Thank you for Choosing Us. Visit Again
+              </p>
+            </div>
+            <div class="col-4">
+              <table class="table border-0 table-hover">
+                <tfoot>
+                  <tr>
+                    <br />
+                    <td>Sub Total:</td>
+                    <td ></td>
+                  </tr>
+                </tfoot>
+              </table>
+              <button onclick="print();" class="box">
+                Print 
+                </button>
+            </div>
+          </div>
+        </section>
+      </div>
+      </div>
+    </div>
+    <script>
+      var today = new Date();
+      var dd = String(today.getDate()).padStart(2, '0');
+      var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+      var yyyy = today.getFullYear();
+      today = mm + '/' + dd + '/' + yyyy;
+      document.getElementById("date").innerHTML=today;
+    </script>
+  </body>
+</html>

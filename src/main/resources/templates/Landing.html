@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" th:href="@{~/css/landing.css}">
+    <link rel="shortcut icon" type="x-icon" th:href="@{~/img/logo.png}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="x-icon" th:href="@{~/img/logo.png}">
+	<title>Adventure</title>
+</head>
+<body>
+<section class="hero">
+	<nav class="navbar">
+		<div class="logo">
+			<img th:src="@{~/img/logo.png}" alt="">
+			<h1>Adventure</h1>
+		</div>
+		<ul class="nav-links">
+			
+			<li><a th:href="@{~/login}">Login</a></li>
+			<li><a th:href="@{~user/register}">Register</a></li>
+			<li></li>
+		</ul>
+	</nav>
+	<div class="hero-text">
+		<h2>Escape From Your Daily Life</h2>
+		<h1>Find Yourself Outside</h1>
+		<p>Choose us and Travel The World</p>
+		<a th:href="@{~/login}"><button>View Tours</button></a>
+		<div class="social-media-icons">
+			<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+			<a href="#"><i class="fa-brands fa-twitter"></i></a>
+			<a href="#"><i class="fa-brands fa-instagram"></i></a>
+			<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+		</div>
+	</div>
+	<div class="hero-image">
+		<img th:src="@{~/img/image3.jpg}">
+	</div>
+</section>
+
+</body>
+</html>
